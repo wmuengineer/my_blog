@@ -30,9 +30,6 @@ group :development do
   gem 'mina'
 end
 
-end
-
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
