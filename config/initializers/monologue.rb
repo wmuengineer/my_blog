@@ -18,6 +18,7 @@ Monologue.config do |config|
 
   config.layout               = "layouts/application"
 
+
   # ANALYTICS
   config.gauge_analytics_site_id = "YOUR COGE FROM GAUG.ES"
   config.google_analytics_id = "YOUR GA CODE"

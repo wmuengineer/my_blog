@@ -1,0 +1,13 @@
+<div class="post-preview">
+  <section data-tags="<%= post.tags.map(&:name).join(' ') %>">
+    <h2 class="post-title"><%= link_to post.title, post.full_url %></h2>
+    <h3 class="post-subtitle"> <%= sanitize truncate_html(post.content, length: 100, omission: '...') %></h3>
+    <p class="post-meta">Posted by <%= post.user.name %> on <%= I18n.localize(post.published_at.to_date, format: :long) %> </p>
+  </div>
+  <div  class="post-meta" data-monologue="tags">
+    <span>Tags: </span>
+    <%= render post.tags %>
+  </div>
+  <%= link_to t(".readmore"), post.full_url, class: "button" %>
+  </section>
+<hr>
