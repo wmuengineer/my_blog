@@ -16,11 +16,11 @@ set :repository, 'git@github.com:wmuengineer/my_blog.git'
 set :branch, 'master'
 
 # For system-wide RVM install.
-#   set :rvm_path, '/usr/local/rvm/bin/rvm'
+  set :rvm_path, '/usr/local/rvm/bin/rvm'
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
-set :shared_paths, ['config/database.yml', 'log']
+set :shared_paths, ['config/database.yml', 'config/secrets.yml', 'config/initializers/monologue.rb', 'log']
 
 # Optional settings:
    set :user, 'root'    # Username in the server to SSH to.
@@ -35,7 +35,7 @@ task :environment do
   # invoke :'rbenv:load'
 
   # For those using RVM, use this to load an RVM version@gemset.
-  # invoke :'rvm:use[ruby-1.9.3-p125@default]'
+  invoke :'rvm:use[ruby-2.1.5@default]'
 end
 
 # Put any custom mkdir's in here for when `mina setup` is ran.
