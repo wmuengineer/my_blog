@@ -22,6 +22,7 @@ module Blog2
 
     config.assets.enabled = true
     config.assets.precompile += Ckeditor.assets
+    config.assets.precompile += ['*ckeditor/skins/moono/icons.png']
     config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
   end
 end
