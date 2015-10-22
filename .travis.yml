@@ -17,4 +17,4 @@ env:
   - secure: DUU1sB1zLmHLcn3Houc+6JgXyOFVQD7dCjDcK3f0aC30J+F//kTumO+/fo5ws8D9U5yryd9c/9wxWBztUGL7YVQKGifEn73DCblQ776GjQTGoL5zNMBNaoq79JRKc/2naYAuAmX4zf9YEtXh/YLcgx0TUd5G2ieclejefVDoC97kfUsoE0lG1QKplDbs/+I8irFfojsmRNl8BjV/a3ia7xWg6ae24mIImraktFJQHVcQNut2IwiANUZHXDoHO0rPi7NTHjx0CZNAeJsf09qu5HTseqpXWnTZAStTiaoyJaCNEcTm136LnXzUqqBkvFy72xdOe3E5v29yJJhLjsgjwH5GX3QABtQYx/ddCVRIRhFFTsJ4FHrupdK03Zt5KiGNRyBjc+xQlm+eaGtFs40sAAEBnmqGB0Ls5Rirwib7BzsHFI/iTnHoti+hRsHO08XYLLHwDKr2tdfGne2AEJKqQDlu6s4QO1Vbv9tcY/cxvLiIHeVq/64kb9O6E/HqfeyDPeFPn1JUbWFbGJdQpl8yth3OUVU2kLdBiW7c/YxLOF4HsnpTJI8x38fngM29L9oYWl7uMKYRY8jq6ykEUBkO1ZjEKyhwDf+S9qVNlbOfyEOL/L6GNBwvXklzv07FRXHpv2SqMDCKJenkGzpCXkZWaPldP85Fc/HE8vlECaMKYT4=
 after_success:
 - sudo apt-get -y install sshpass
-- sshpass -p$ADAM_PASS ssh -o StrictHostKeyChecking=no $ADAM_USER@$ADAM_HOST bash $ADAM_PATH/deploy_adam.sh
+- ssh $ADAM_USER@$ADAM_HOST -o StrictHostKeyChecking=no bash $ADAM_PATH/deploy_adam.sh
