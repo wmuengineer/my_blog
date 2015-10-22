@@ -1,0 +1,6 @@
+test:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: blog2_test
+  username: postgres
