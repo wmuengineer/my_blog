@@ -17,4 +17,4 @@ env:
   - secure: qaiMJgY+NJM/GIuVLM0A+JlFmj+gPOrbjKIu1b05/LwtaMEjqmukovRLvvFn9EP/R7wcyhy5sH2UL/XHVP+iAn6v7pLEsGWupZIL49+lrp/+PFNg0695/fCwfyB3qaCzyo39QkeKNex/U8EzsmF7u5dqIfu8PEkGeKd9qDjchBBPO2E3kiPrUTxzzE9vRbjOHhsWmhyS29nH25AkQOc5kj7jC+sECE+wkwg6XhQ40GqSU8BJg8mANeoviDsdW5MJwdwO52CneSx6vWa7DWo4ReDXe9sNxJ4i0zbXudlN3fSr+5k1KnjonWZYVrcjIzs3NwzZAEKcD6prIEiQSlHpOCme0cCxpyYD91XACs3KPxENHJX5wVWsMOrTCHMJZHf9i+4O+Anaf6j/SWOOys94kd7VUaQmQADCUODHkhWseaO4fLkxo7ANMaMLjJ/y06annP93g5mPf+zCdRprcGXI/lzK62uZySGKBstjGOYnim6g6DBmzhCs8gb++1AJlLczpoHZx1fi5lDRjIKEoftY9WTM1GSsjXNY6GUKPHUsg++czYddl9iqWK6INX8hqHjyh+htX63j7p8RIwbLwfq7rjGR5o1PFgjS7dhtE908bnBe5bhiSdK1sX9aiIhlGqJEW6FeDPoAGmBJmXkwkAsy7EqlO0Yrca/ZkoAeVmUwX/I=
 after_success:
 - sudo apt-get -y install sshpass
-- sshpass -p$NIRDIO_PASSWD ssh $ADAM_USER@$ADAM_HOST -o StrictHostKeyChecking=no bash $ADAM_PATH/deploy_adam.sh
+- sshpass -p$ADAM_PASS ssh $ADAM_USER@$ADAM_HOST -o StrictHostKeyChecking=no bash $ADAM_PATH/deploy_adam.sh
