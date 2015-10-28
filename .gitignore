@@ -19,3 +19,4 @@ config/initializers/monologue.rb
 /vendor/bundle
 /public/assets
 /config/database.yml
+.DS_Store
