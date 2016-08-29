@@ -21,7 +21,7 @@ after_success:
 
 deploy:
   provider: cloudfoundry
-  api: cf api --skip-ssl-validation https://api.system.platform.nirdhost.com
+  api: https://api.system.platform.nirdhost.com
   username: adamb@nird.us
   password:
     secure: vEiNxRcpUY8vCvgG12IX27VErhMxQrzcpgbc77Ug8PEepWB9C1KcFT2L6ucdY5zuNWG/SP8qhFVNlQv0qijl46r3WpMIHoNy1S98RDhpMa2pWNMxCGmhEvR638vDlpOdDXorKThaiyQa318N9cOhu8EeVEhM2gNmDoIY/qENJPJLpe32TplQ1TwYPB266qV/zSG3ar3jHzdm4iN+3u/zDy5ymPEfm0BQYYnb/UxhHZZjCTwd5QxiWvO1WueYtMQ0CkqZ+PSO/7JIfb710mHNeFFeVwP2uV0xoCsb4Rk6wm6Tvbi8rPbr+Gxkhn0g8EYZ+numxAFpJc5WwE5HzNCiJ1DrJuLHqaRxuxc4PXPy2ns7trTlZzs6t4vrCssioFunmEFhrTZT4TIkp9v7EKScjutuSfrOj2dZG9hkyCUOM+CRB9LML2NAYGxmqHX5uqMSmhIpg6nbNRvb1jkvcH/N9yFoTBZFZKzi4JEoEDfs1XGX0VKxohi3nLqv3jmP0HS27a9ZCOJf2mdtgzsgiEDxrg+3pjm5e/nvatctY4n6loHuXEJkqwLYk3M6yKA2HRoKsrjKyjQE6iec8AeEHJCGyh5lD9wkxSp7DabzStOzZ9BtbnLIkhqQ0Fha/NXb3mplpM/tCVTRneSbGN401iQwdDCClHDmrbDeDUcGc+185hw=
