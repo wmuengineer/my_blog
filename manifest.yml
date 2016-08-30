@@ -1,4 +1,4 @@
 ---
 applications:
-- name: adam_blog_<% =ENV['RAILS_ENV'] %>
+- name: adam_blog_<%= ENV['RAILS_ENV'] %>
   memory: 256M
