@@ -20,6 +20,7 @@ after_success:
 - sudo apt-get -y install sshpass
 
 deploy:
+  edge: true
   provider: cloudfoundry
   api: https://api.system.platform.nirdhost.com
   username: adamb
