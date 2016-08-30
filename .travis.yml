@@ -27,5 +27,5 @@ deploy:
   organization: nirdhost
   space: production
   on:
-    branch: master, production
+    condition: if [[ $TRAVIS_BRANCH = master ]] || [[ $TRAVIS_BRANCH = production ]] ; then <deploy>; fi
     repo: wmuengineer/my_blog
