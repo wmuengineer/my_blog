@@ -27,5 +27,5 @@ deploy:
   organization: nirdhost
   space: production
   on:
-    branch: <%= ENV['RAILS_ENV'] %>
+    branch: master, production
     repo: wmuengineer/my_blog
