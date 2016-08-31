@@ -31,5 +31,5 @@ deploy:
     repo: wmuengineer/my_blog
   space: pre-production
   on:
-    condition: "$TRAVIS_BRANCH = master"
+    branch: master
     repo: wmuengineer/my_blog
