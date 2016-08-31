@@ -28,10 +28,11 @@ deploy:
 
   space: production
   on:
-    condition: "$TRAVIS_BRANCH = production"
+    branch: production
+    # condition: "$TRAVIS_BRANCH = production"
     repo: wmuengineer/my_blog
 
-  space: pre-production
-  on:
-    condition: "$TRAVIS_BRANCH = master"
-    repo: wmuengineer/my_blog
+  # space: pre-production
+  # on:
+  #   condition: "$TRAVIS_BRANCH = master"
+  #   repo: wmuengineer/my_blog
