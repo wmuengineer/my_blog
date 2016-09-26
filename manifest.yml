@@ -2,4 +2,5 @@
 applications:
 - name: adam_blog_prod
   memory: 256M
+  random-route: true
   instances: 2
