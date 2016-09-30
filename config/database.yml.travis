@@ -11,10 +11,10 @@ test:
   pool: 5
   database: blog2_test
   username: postgres
-  
+
 production:
   <<: *default
   adapter: postgresql
-  host: 10.4.58.61
+  host: 10.4.58.5
   port: 6432
   database: adamb
