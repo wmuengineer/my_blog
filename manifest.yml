@@ -3,4 +3,5 @@ applications:
 - name: adam_blog_prod
   memory: 256M
   random-route: true
+  command: bundle exec rake cf:on_first_instance db:migrate && bundle exec rails s -p $PORT -e $RAILS_ENV
   instances: 2

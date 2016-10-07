@@ -9,25 +9,3 @@ script:
 - bundle exec rake
 notifications:
   slack: nird:BqbUGQOgg2pFAVDIX0FZVh4l
-
-deploy:
-  - provider: cloudfoundry
-    api: https://api.system.platform.nirdhost.com
-    username: adamb
-    password:
-      secure: oNHPv7pPLMHGw5InTVFH2V0DxpR730ufT9BFJqhlAH3UR2XmlXe+9Nej0dtAwND+Nk2KMp3FsJ6skgu3YUaDz+K7Xtt/aTt8eGxL+NJFBE2FBPwkuhlp+oz9nGc3QSlQ9oS6ZgerGzo0uUuIGtXF7gwHqg8kYfQ/+jzqMs4J6YA9eHQMKcod+gWzWLUqGpcZ4ehftoFwwi9/nqGXxEOnnR3XEh38pwLMC7N776Io87QSyQUZnlAIlgNldr5iSnZRdW/7h1JCny+Ls9vEfLoXb9y7lt3Mp1pnbrglcx0UfWSsCFt60UeB/Nf0E9N5bc7x1mSZRDESgnXd4NuUVBrlSdD95clRZNV+Li7k/BvVkfIyuclZflzShWfWPNortb3fzIpJCjupXHYhAWS6qqZOtXnCXAF2BIL078JA72+eFhk4RK2Ocb27F9J6l6DVGHXOM2cs/3Z4xODbBtaHWITgOLCvIJmPxGPcxBO4SirlNTYiwnHgxnQ1zjD8lISEEqfFBuRJVVxeh+VJ30gBJJVEX+8Pn31IfflEjKnZwOTQSU6OkyuXtWCiDNv9NI2NXxdE5puizcZHXYtKaBm1IyWOxUCT8uM8EuMN7N/W6mHRq+Rd9nKdK7uyIhgTht/TsQLesNK471B9uaH23qtsFr0pr9GZp+eNskI7DJnasnsJp7k=
-    organization: nirdhost
-    space: production
-    on:
-      repo: wmuengineer/my_blog
-      branch: production
-  - provider: cloudfoundry
-    api: https://api.system.platform.nirdhost.com
-    username: adamb
-    password:
-      secure: oNHPv7pPLMHGw5InTVFH2V0DxpR730ufT9BFJqhlAH3UR2XmlXe+9Nej0dtAwND+Nk2KMp3FsJ6skgu3YUaDz+K7Xtt/aTt8eGxL+NJFBE2FBPwkuhlp+oz9nGc3QSlQ9oS6ZgerGzo0uUuIGtXF7gwHqg8kYfQ/+jzqMs4J6YA9eHQMKcod+gWzWLUqGpcZ4ehftoFwwi9/nqGXxEOnnR3XEh38pwLMC7N776Io87QSyQUZnlAIlgNldr5iSnZRdW/7h1JCny+Ls9vEfLoXb9y7lt3Mp1pnbrglcx0UfWSsCFt60UeB/Nf0E9N5bc7x1mSZRDESgnXd4NuUVBrlSdD95clRZNV+Li7k/BvVkfIyuclZflzShWfWPNortb3fzIpJCjupXHYhAWS6qqZOtXnCXAF2BIL078JA72+eFhk4RK2Ocb27F9J6l6DVGHXOM2cs/3Z4xODbBtaHWITgOLCvIJmPxGPcxBO4SirlNTYiwnHgxnQ1zjD8lISEEqfFBuRJVVxeh+VJ30gBJJVEX+8Pn31IfflEjKnZwOTQSU6OkyuXtWCiDNv9NI2NXxdE5puizcZHXYtKaBm1IyWOxUCT8uM8EuMN7N/W6mHRq+Rd9nKdK7uyIhgTht/TsQLesNK471B9uaH23qtsFr0pr9GZp+eNskI7DJnasnsJp7k=
-    organization: nirdhost
-    space: staging
-    on:
-      repo: wmuengineer/my_blog
-      branch: master
