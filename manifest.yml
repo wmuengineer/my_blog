@@ -1,6 +1,10 @@
 ---
 applications:
 - name: adam_blog
-  memory: 256M
+  domain: adamdbell.com
+  hosts: [ www ]
+  services:
+    - adamb_blog_production
   command: bundle exec rake cf:on_first_instance db:migrate && bundle exec rails s -p $PORT -e $RAILS_ENV
+  memory: 256M
   instances: 2
