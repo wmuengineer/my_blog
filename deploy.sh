@@ -25,5 +25,3 @@ cf start adam_blog
 cf delete adam_blog-old -f
 cf logout
 echo "Deploy Complete"
-
-exit 0
