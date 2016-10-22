@@ -13,8 +13,16 @@ export PATH=$PATH:$PWD
 
 echo "CF Login"
 cf api "$CF_API_URL"
-cf login -u "$CF_USER" -p "$CF_PASS" -o "$CF_ORG" -s "$TRAVIS_BRANCH"
+cf login -u "$CF_USER" -p "$CF_PASS" -o "$CF_ORG" -s "production"
 
+echo "Start Deploy"
+cd my_blog/
+rm -rf vendor/bundle
+cf rename adam_blog adam_blog-old
+cf push adam_blog -f ./manifest.yml --no-start
+
+cf start adam_blog
+cf delete adam_blog-old -f
 cf logout
 echo "Deploy Complete"
 
