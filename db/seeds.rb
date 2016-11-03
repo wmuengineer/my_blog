@@ -4,4 +4,4 @@
 # Examples:
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+   Monologue::User.create(name: "local-user", email:"local-user@example.com", password:"my-password", password_confirmation: "my-password")
