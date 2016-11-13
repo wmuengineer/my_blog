@@ -14,7 +14,7 @@ cf login -u "$CF_USER" -p "$CF_PASS" -o "$CF_ORG" -s "$CI_BRANCH"
 echo "Start Deploy"
 cd /home/rof/src/github.com/wmuengineer/my_blog/
 rm -rf vendor/bundle
-cf rename adam_blog adam_blog-old
+cf rename adam_blog adam_blog-old 
 cf push adam_blog -f ./"$CI_BRANCH"-manifest.yml --no-start
 cf start adam_blog
 cf delete adam_blog-old -f
