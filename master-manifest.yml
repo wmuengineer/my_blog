@@ -1,11 +1,9 @@
 ---
 applications:
 - name: adam_blog
-  domain: run.platform.nirdhost.com
-  domain: adamdbell.com
-  host: staging
+  random-route: true
   services:
-    - adam_blog_staging
+    - adam-blog-master
   command: bundle exec rake cf:on_first_instance db:migrate && bundle exec rails s -p $PORT -e $RAILS_ENV
   memory: 256M
   instances: 1
