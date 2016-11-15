@@ -5,7 +5,7 @@ applications:
   domain: adamdbell.com
   host: staging
   services:
-    - adam-blog_staging
+    - adam_blog_staging
   command: bundle exec rake cf:on_first_instance db:migrate && bundle exec rails s -p $PORT -e $RAILS_ENV
   memory: 256M
   instances: 1
