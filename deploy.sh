@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Application name, please set
-APPLICATION_NAME='adam_blog' # Use hyphens - only as symbols, no _ underscores (NIRD convention)
+APPLICATION_NAME='adam-blog' # Use hyphens - only as symbols, no _ underscores (NIRD convention)
 # Colors for cosmetics
 RED='\033[0;31m'
 YELLOW='\033[1;33m'

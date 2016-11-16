@@ -1,6 +1,6 @@
 ---
 applications:
-- name: adam_blog
+- name: adam-blog
   domain: run.platform.nirdhost.com
   domain: adamdbell.com
   hosts: [ www ]

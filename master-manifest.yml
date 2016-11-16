@@ -1,6 +1,6 @@
 ---
 applications:
-- name: adam_blog
+- name: adam-blog
   random-route: true
   services:
     - adam-blog-master
