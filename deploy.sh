@@ -6,8 +6,8 @@ RED='\033[0;31m'
 YELLOW='\033[1;33m'
 GREEN='\033[0;32m'
 NC='\033[0m'
-ACTUAL_BRANCH=${$CI_BRANCH}              # Obtain actual branch if we are building under CODESHIP
-if [ "$ACTUAL_BRANCH" != "staging" -a "$ACTUAL_BRANCH" != "production" ] ; then
+ACTUAL_BRANCH=${CI_BRANCH}              # Obtain actual branch if we are building under CODESHIP
+if [ "$ACTUAL_BRANCH" != "staging" -a "$ACTUAL_BRANCH" != "production" -a "$ACTUAL_BRANCH" != "master" ] ; then
 echo -e "${YELLOW}Not deploying the branch $ACTUAL_BRANCH."
 exit 0;
 fi
