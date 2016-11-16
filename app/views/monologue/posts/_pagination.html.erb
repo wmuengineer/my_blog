@@ -1,9 +1,11 @@
-<div id="pagination">
-  <% if @posts.total_pages > 1 && @posts.total_pages != @page.to_i %>
-    <%= link_to t(".older_posts"), posts_page_path(@page.to_i+1), class: "older_posts" %>
-  <% end %>
-
-  <% if @posts.total_pages > 1 && @page.to_i > 1 %>
-    <%= link_to t(".newer_posts"), posts_page_path(@page.to_i-1), class: "newer_posts" %>
-  <% end %>
-</div>
+<!-- Pagination -->
+<ul class="pagination text-center">
+    <li class="disabled"><a href="#!"><i class="ion-ios-arrow-thin-left"></i></a></li>
+    <li class="active"><a href="#!">1</a></li>
+    <li class="waves-effect"><a href="#!">2</a></li>
+    <li class="waves-effect"><a href="#!">3</a></li>
+    <li class="waves-effect"><a href="#!">4</a></li>
+    <li class="waves-effect"><a href="#!">5</a></li>
+    <li class="waves-effect"><a href="#!"><i class="ion-ios-arrow-thin-right"></i></a></li>
+</ul>
+<!-- ./Pagination -->
