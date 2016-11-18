@@ -1,11 +1,10 @@
 ---
 applications:
 - name: adam-blog
-  domain: run.platform.nirdhost.com
   domain: adamdbell.com
-  hosts: [ www ]
+  host: master
   services:
-    - adam_blog_production
+    - adam-blog-master
   command: bundle exec rake cf:on_first_instance db:migrate && bundle exec rails s -p $PORT -e $RAILS_ENV
-  memory: 512M
+  memory: 256M
   instances: 1
