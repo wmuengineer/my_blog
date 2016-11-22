@@ -1,6 +1,6 @@
 ---
 applications:
-- name: adam_blog_staging
+- name: adam-blog
   domain: run.platform.nirdhost.com
   domain: adamdbell.com
   host: staging
