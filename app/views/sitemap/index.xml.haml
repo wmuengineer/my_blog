@@ -7,9 +7,9 @@
     %changefreq weekly
     %priority 0.5
 
-  -# - for post in @posts
+  - for post in @posts
     %url
-      %loc #{root_url.chomp('/') + post.url}
-      %lastmod=post.updated_at.strftime('%Y-%m-%d')
+      %loc #{root_url.chomp('/') + post.full_url}
+      %lastmod= post.updated_at.strftime('%Y-%m-%d')
       %changefreq weekly
       %priority 0.5
