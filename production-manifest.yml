@@ -8,4 +8,4 @@ applications:
     - adam_blog_production
   command: bundle exec rake cf:on_first_instance db:migrate && bundle exec rails s -p $PORT -e $RAILS_ENV
   memory: 512M
-  instances: 1
+  instances: 2
