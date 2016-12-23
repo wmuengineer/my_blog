@@ -21,6 +21,8 @@ module Blog2
     # config.i18n.default_locale = :de
 
     config.assets.enabled = true
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
     config.assets.precompile += Ckeditor.assets
     config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
   end
