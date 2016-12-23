@@ -6,7 +6,6 @@
     <div class="animated bounceInDown">
         <div class="spinner"></div>
     </div>
-
     <div class="text-div text-center animated zoomIn">
         <p class="text-uppercase">WELCOME TO</p>
         <!-- Name Only -->
@@ -19,17 +18,13 @@
 ===========================================-->
 <div class="container blog-page">
     <div class="row">
-
         <!-- Blog Posts -->
         <div class="col col-md-8 col-sm-12 col-xs-12">
 
             <!-- Blog Post Wrapper -->
             <div class="blog-posts-wrapper">
-
-              
-
         <%= render @posts %>
-
+      </div>
 <% if @page %>
   <%= render partial: "pagination" %>
 <% end %>
@@ -39,163 +34,14 @@
 <!-- Sidebar -->
         <div class="col col-md-4 col-sm-12 col-xs-12">
             <div class="sidebar">
-
-                <!-- Search -->
-                <div class="search card">
-                    <form action="" method="">
-                        <div class="input-group">
-                            <input id="search" name="search" type="text" class="validate" placeholder="Search Here">
-                        <span class="input-group-btn">
-                            <button name="submit" type="submit" class="search-btn btn-floating btn-large waves-effect waves-light"
-                                    data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
-                                <i class="ion-ios-search-strong" aria-hidden="true"></i>
-                            </button>
-                        </span>
-                        </div>
-                    </form>
-                </div>
-                <!-- ./Search -->
-
-
-                <!-- Category -->
-                <h5 class="title text-capitalize">Categories</h5>
-                <ul class="category">
-                    <li><a href="#0">E-Commerce</a></li>
-                    <li><a href="#0">Programing</a></li>
-                    <li><a href="#0">Gaming</a></li>
-                    <li><a href="#0">Development</a></li>
-                    <li><a href="#0">Traveling</a></li>
-                    <li><a href="#0">Passions</a></li>
-                </ul>
-                <!-- ./Category -->
-
-
-                <!-- Recent Posts  -->
-                <h5 class="title text-capitalize">Recent Posts</h5>
-                <div class="card sidebar-post">
-
-                    <!-- Recent 1 -->
-                    <div class="row">
-                        <!-- Sidebar post image -->
-                        <div class="col-xs-4">
-                            <a href="post.html"><img class="img-responsive img-circle" src="images/blog/sp.jpg" alt=""></a>
-                        </div>
-                        <!-- Post Headline with link -->
-                        <div class="col-xs-8">
-                            <a href="post.html"><h6 class="text-capitalize text-underline">Suitable post title</h6></a>
-                            <p>Lorem ipsum dolor sit amet elit. Vestibulum posuere molestie ipsum vel sollicitudin.</p>
-                        </div>
-                    </div>
-
-                    <!-- Recent 2 -->
-                    <div class="row">
-                        <!-- Sidebar post image -->
-                        <div class="col-xs-4">
-                            <a href="post.html"><img class="img-responsive img-circle" src="images/blog/sp.jpg" alt=""></a>
-                        </div>
-                        <!-- Post Headline with link -->
-                        <div class="col-xs-8">
-                            <a href="post.html"><h6 class="text-capitalize text-underline">Suitable post title</h6></a>
-                            <p>Lorem ipsum dolor sit amet elit. Vestibulum posuere molestie ipsum vel sollicitudin.</p>
-                        </div>
-                    </div>
-
-                    <!-- Recent 3 -->
-                    <div class="row">
-                        <!-- Sidebar post image -->
-                        <div class="col-xs-4">
-                            <a href="post.html"><img class="img-responsive img-circle" src="images/blog/sp.jpg" alt=""></a>
-                        </div>
-                        <!-- Post Headline with link -->
-                        <div class="col-xs-8">
-                            <a href="post.html"><h6 class="text-capitalize text-underline">Suitable post title</h6></a>
-                            <p>Lorem ipsum dolor sit amet elit. Vestibulum posuere molestie ipsum vel sollicitudin.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ./Recent Posts  -->
-
-
-                <!-- Popular Posts -->
-                <h5 class="title text-capitalize">Popular Posts</h5>
-                <div class="card sidebar-post">
-                    <!-- Popular 1 -->
-                    <div class="row">
-                        <!-- Sidebar post image -->
-                        <div class="col-xs-4">
-                            <a href="post.html"><img class="img-responsive img-circle" src="images/blog/sp.jpg" alt=""></a>
-                        </div>
-                        <!-- Post Headline with link -->
-                        <div class="col-xs-8">
-                            <a href="post.html"><h6 class="text-capitalize text-underline">Suitable post title</h6></a>
-                            <p>Lorem ipsum dolor sit amet elit. Vestibulum posuere molestie ipsum vel sollicitudin.</p>
-                        </div>
-                    </div>
-
-                    <!-- Popular 2 -->
-                    <div class="row">
-                        <!-- Sidebar post image -->
-                        <div class="col-xs-4">
-                            <a href="post.html"><img class="img-responsive img-circle" src="images/blog/sp.jpg" alt=""></a>
-                        </div>
-                        <!-- Post Headline with link -->
-                        <div class="col-xs-8">
-                            <a href="post.html"><h6 class="text-capitalize text-underline">Suitable post title</h6></a>
-                            <p>Lorem ipsum dolor sit amet elit. Vestibulum posuere molestie ipsum vel sollicitudin.</p>
-                        </div>
-                    </div>
-
-                    <!-- Popular 3 -->
-                    <div class="row">
-                        <!-- Sidebar post image -->
-                        <div class="col-xs-4">
-                            <a href="post.html"><img class="img-responsive img-circle" src="images/blog/sp.jpg" alt=""></a>
-                        </div>
-                        <!-- Post Headline with link -->
-                        <div class="col-xs-8">
-                            <a href="post.html"><h6 class="text-capitalize text-underline">Suitable post title</h6></a>
-                            <p>Lorem ipsum dolor sit amet elit. Vestibulum posuere molestie ipsum vel sollicitudin.</p>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- ./Popular Posts -->
-
-
-                <!-- About the Author -->
-                <h5 class="title text-capitalize">About The Author</h5>
-                <div class="card sidebar-post">
-                    <img src="images/profile-pic.png" class="img-circle center-block author-profile" alt=""/>
-                    <p class="text-center author-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt.
-                        In iaculis lobortis. Vestibulum posuere molestie ipsum vel sollicitudin. Vestibulum
-                        venenatis pharetra mi, ut vestibulum elit ultricies a.</p>
-
-                    <div class="row text-center">
-                        <div class="text-center">
-                            <a href="index.html" target="_blank" class="text-uppercase visit-profile btn custom-btn waves-effect waves-light"
-                               data-aos="zoom-in" data-aos-delay="300">Visit MY Profile</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- ./About the Author -->
-
-
-                <!-- Follow Me -->
-                <h5 class="title text-capitalize">Follow</h5>
-                <div class="card sidebar-post">
-                    <ul class="text-center list-inline">
-                        <li class="follow-social"><a href="#0" target="_blank"><i class="ion-social-facebook"></i></a></li>
-                        <li class="follow-social"><a href="#0" target="_blank"><i class="ion-social-twitter"></i></a></li>
-                        <li class="follow-social"><a href="#0" target="_blank"><i class="ion-social-linkedin"></i></a></li>
-                        <li class="follow-social"><a href="#0" target="_blank"><i class="ion-social-googleplus"></i></a></li>
-                        <li class="follow-social"><a href="#0" target="_blank"><i class="ion-social-instagram"></i></a></li>
-                    </ul>
-                </div>
-
+                <%= render "search" %>
+                <%= render "categories" %>
+                <%= render "recent" %>
+                <%= render "popular" %>
+                <%= render "about_blurb" %>
+                <%= render "follow" %>
             </div>
-
         </div>
-        <!-- ./Sidebar -->
-
+<!-- ./Sidebar -->
     </div>
 </div>

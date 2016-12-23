@@ -1605,7 +1605,7 @@ footer {
   height: 300px;
   position: relative;
   display: block;
-  background: url("../images/blog-header.jpg") no-repeat;
+  background: image-url("blog-header.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
