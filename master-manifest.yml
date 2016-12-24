@@ -1,7 +1,8 @@
 ---
 applications:
 - name: adam-blog
-  random-route: true
+  domain: adamdbell.com
+  host: master
   services:
     - adam-blog-master
   command: bundle exec rake cf:on_first_instance db:schema:load && rake cf:on_first_instance && bundle exec db:seed && bundle exec rails s -p $PORT -e $RAILS_ENV

@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.3.1'
 gem 'rails', '4.1.8'
 gem 'pg'
+gem 'haml-rails'
 gem 'monologue'
 gem 'puma'
 gem 'seed_dump'
@@ -18,5 +19,19 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem "monologue_image_upload", :git => "git@github.com:msevestre/monologue_image_upload.git"
 group :development do
+  gem 'web-console', '~> 2.0'
+end
+
+group :test do
+gem 'database_cleaner', '~> 1.5'
+end
+
+group :development, :test do
+  gem 'byebug'
+  gem 'rspec-rails'
+  gem 'rubocop'
   gem 'spring'
+  gem 'capybara'
+  gem 'faker'
+  gem 'factory_girl_rails', "~> 4.0"
 end
