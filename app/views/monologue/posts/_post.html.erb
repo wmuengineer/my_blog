@@ -1,5 +1,5 @@
-<!-- 1st blog post -->
-<div class="card blog" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+
+<div class="card blog" >
     <!-- Blog image here -->
     <%= image_tag "blog/blog-image.jpg", class: "img-responsive" %>
     <div class="blog-content">
@@ -7,35 +7,12 @@
         <div class="blog-title">
             <h6 class="text-capitalize"><%= link_to post.title, post.full_url %></h6>
             <ul>
-                <li><i class="ion-calendar"></i><%= I18n.localize(post.published_at.to_date, format: :long) %> </li>
+                <li><i>Posted by <%= post.user.name %> on <%= I18n.localize(post.published_at.to_date, format: :long) %></i></li>
             </ul>
-            <!-- Add link of full post -->
-            <a href="post.html" target="_blank" class="btn-floating waves-effect waves-light btn-large more-btn custom-btn"
-               data-aos="zoom-in" data-aos-delay="300">
-                <i class="ion-android-more-horizontal"></i></a>
         </div>
         <!-- some line of post -->
         <p class="text-left">
-            <%= truncate_html(strip_tags(post.content), length: 100, omission: '...') %>
+            <%= truncate_html(strip_tags(post.content), length: 350, omission: '...') %>
         </p>
     </div>
 </div>
-<!-- ./1st blog post -->
-
-
-
-
-
-
-<div class="post-preview">
-  <section data-tags="<%= post.tags.map(&:name).join(' ') %>">
-    <h2 class="post-title"><%= link_to post.title, post.full_url %></h2>
-    <h3 class="post-subtitle"> <%= truncate_html(strip_tags(post.content), length: 100, omission: '...') %></h3>
-    <p class="post-meta">Posted by <%= post.user.name %> on <%= I18n.localize(post.published_at.to_date, format: :long) %> </p>
-  </div>
-  <div  class="post-meta" data-monologue="tags">
-    <span>Tags: <%= render post.tags %> |</span>
-  </div>
-  <%= link_to t(".readmore"), post.full_url, class: "button" %>
-  </section>
-<hr>

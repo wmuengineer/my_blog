@@ -4,6 +4,6 @@ applications:
   random-route: true
   services:
     - adam-blog-master
-  command: bundle exec rake cf:on_first_instance db:migrate && bundle exec rails s -p $PORT -e $RAILS_ENV
+  command: bundle exec rake cf:on_first_instance db:schema:load && rake cf:on_first_instance && bundle exec db:seed && bundle exec rails s -p $PORT -e $RAILS_ENV
   memory: 256M
   instances: 1

@@ -24,7 +24,8 @@ Monologue.config do |config|
   config.google_analytics_id = "UA-45398650-3"
 
   config.sidebar = ["latest_posts", "latest_tweets", "categories", "tag_cloud"]
-
+  config.image_upload.max_picture_size = 2.megabytes
+    config.image_upload.upload_path = "monologue"
 
   # SOCIAL
   config.twitter_username = "adamdbell2"

@@ -16,6 +16,7 @@ gem 'rails_12factor', '~> 0.0.3'
 gem 'rails_serve_static_assets', '~> 0.0.5'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
+gem "monologue_image_upload", :git => "git@github.com:msevestre/monologue_image_upload.git"
 group :development do
   gem 'spring'
 end
