@@ -5,7 +5,7 @@
         <div class="post-heading">
           <h1><%= link_to post.title, post.full_url %></h1>
           <h2 class="subheading"><%= truncate_html(post.content, length: 100, omission: '...') %></h2>
-          <span class="meta">Posted by <%= post.user.name %> on <%= I18n.localize(post.published_at.to_date, format: :long) %> </span>
+          <span class="meta">Posted by this muthafucka <%= post.user.name %> on <%= I18n.localize(post.published_at.to_date, format: :long) %> </span>
         </div>
       </div>
     </div>
