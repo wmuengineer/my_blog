@@ -3,14 +3,12 @@
     <!-- Blog image here -->
     <%= image_tag "blog/blog-image.jpg", class: "img-responsive" %>
     <div class="blog-content">
-        <!-- Edit title and info here -->
         <div class="blog-title">
             <h6 class="text-capitalize"><%= link_to post.title, post.full_url %></h6>
             <ul>
                 <li><i>Posted by <%= post.user.name %> on <%= I18n.localize(post.published_at.to_date, format: :long) %></i></li>
             </ul>
         </div>
-        <!-- some line of post -->
         <p class="text-left">
             <%= truncate_html(strip_tags(post.content), length: 350, omission: '...') %>
         </p>
