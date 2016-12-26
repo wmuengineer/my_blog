@@ -7491,7 +7491,7 @@ nav .input-field label.active {
   src: local(Roboto Regular), url(font-path("roboto/Roboto-Light.eot"));
   src: url(font-path("roboto/Roboto-Light.eot?#iefix")) format("embedded-opentype"), url(font-path("roboto/Roboto-Light.woff2")) format("woff2"), url(font-path("roboto/Roboto-Light.woff")) format("woff"), url(font-path("roboto/Roboto-Light.ttf")) format("truetype");
   font-weight: 400;
-}Light
+}
 
 @font-face {
   font-family: "Roboto";
