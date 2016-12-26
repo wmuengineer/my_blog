@@ -1,28 +1,38 @@
-
+<%= render 'postindexheader' %>
 <% content_for :title do %>
   <%= @post.title %>
 <% end %>
 
-<% content_for :meta_description do %>
-  <%= truncate(strip_tags(@post.content), length: 155) %>
-<% end %>
-<%= render partial: 'monologue/posts/post_header', locals: {post: @post }%>
-<article>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <%= raw @post.content %>
-      <div class="tags" data-monologue="tags">
-        <span><%= render @post.tags %> |</span>
+<!--==========================================
+                 BLOG PAGE
+===========================================-->
+<div class="container blog-page">
+  <div class="row">
+  <!-- Single Posts -->
+    <div class="col col-md-8 col-sm-12 col-xs-12">
+      <!-- Blog Post Wrapper -->
+      <div class="blog-posts-wrapper">
+          <!-- Full post -->
+              <!-- Blog image here -->
+              <div class="blog-content">
+                  <!-- Edit title and info here -->
+                  <div class="blog-title post-title">
+                      <h1 class="text-capitalize"><%= @post.title %></h1>
+                      <ul>
+                          <li><%= I18n.localize(@post.published_at.to_date, format: :long) %></li>
+                      </ul>
+                  </div>
+                  <!-- some line of post -->
+                  <%= raw @post.content %>
+                  <div class="tags"><span><%= render @post.tags %> </span></div>
+              <hr>
+          </div>
+        </div>
       </div>
-      </div>
-    </div>
-
-
-
-  <%= render "monologue/posts/social_sharing" %>
-
+    <%= render 'sidebar' %>
+  </div>
   <div id="disqus_thread"></div>
   <%= render 'layouts/monologue/application/disqus_embed' %>
   <noscript>Please enable JavaScript to view the comments.</noscript>
-</article>
+</div>
+                <!-- ./Full post -->
