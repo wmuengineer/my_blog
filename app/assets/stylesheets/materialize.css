@@ -7489,14 +7489,14 @@ nav .input-field label.active {
 @font-face {
   font-family: "Roboto";
   src: local(Roboto Regular), url(font-path("roboto/Roboto-Light.eot"));
-  src: url(font-path("roboto/Roboto-Light.eot?#iefix")) format("embedded-opentypfont-path("roboto/Roboto-Light.woff2")) format("woff2"), url(font-path("roboto/Roboto-Light.woff")) format("woff"), url(font-path("roboto/Roboto-Light.ttf")) format("truetype");
+  src: url(font-path("roboto/Roboto-Light.eot?#iefix")) format("embedded-opentype"), url(font-path("roboto/Roboto-Light.woff2")) format("woff2"), url(font-path("roboto/Roboto-Light.woff")) format("woff"), url(font-path("roboto/Roboto-Light.ttf")) format("truetype");
   font-weight: 400;
 }Light
 
 @font-face {
   font-family: "Roboto";
   src: local(Roboto Regular), url(font-path("roboto/Roboto-Regular.eot"));
-  src: url(font-path("roboto/Roboto-Regular.eot?#iefix")) format("embedded-opentypfont-path("roboto/Roboto-Regular.woff2")) format("woff2"), url(font-path("roboto/Roboto-Regular.woff")) format("woff"), url(font-path("roboto/Roboto-Regular.ttf")) format("truetype");
+  src: url(font-path("roboto/Roboto-Regular.eot?#iefix")) format("embedded-opentype"), url(font-path("roboto/Roboto-Regular.woff2")) format("woff2"), url(font-path("roboto/Roboto-Regular.woff")) format("woff"), url(font-path("roboto/Roboto-Regular.ttf")) format("truetype");
   font-weight: 400;
 }
 
