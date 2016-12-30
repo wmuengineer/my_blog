@@ -9,12 +9,11 @@
   <meta name="keywords" content="">
 
   <title>Adam's Blog</title>
-  <link rel="icon" href="images/fav-icon.png">
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-    <script src="//load.sumome.com/" data-sumo-site-id="81dc09a1beed897de0e139b45f0ab02e801c836ad7458df6891ba40808914f28" async="async"></script>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <script src="//load.sumome.com/" data-sumo-site-id="81dc09a1beed897de0e139b45f0ab02e801c836ad7458df6891ba40808914f28" async="async"></script>
 </head>
 <body>
   <%= yield %>
