@@ -81,6 +81,7 @@ GEM
       select2-rails (~> 3.2)
       truncate_html
     multi_json (1.11.2)
+    newrelic_rpm (3.17.2.327)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     orm_adapter (0.5.0)
@@ -164,6 +165,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   monologue
+  newrelic_rpm
   pg
   puma
   rack-cache
